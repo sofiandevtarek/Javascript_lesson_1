@@ -25,8 +25,9 @@ reset.addEventListener("click", () => {
   counterValue.innerText = counter;
 });
 
-counterValue.addEventListener("click", () => { 
-  const colors = ["red", "green", "yellow"];
+colorChanger.addEventListener("click", function () { 
+  const colors = ["red", "blue"];
   const random = Math.floor(Math.random() * colors.length);
   const selectedColor = colors[random];
+  counterValue.style.backgroundColor = selectedColor;
 });
