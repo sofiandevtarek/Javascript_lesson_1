@@ -26,7 +26,7 @@ reset.addEventListener("click", () => {
 });
 
 colorChanger.addEventListener("click", function () { 
-  const colors = ["red", "blue"];
+  const colors = ["red", "green", "blue", "black"];
   const random = Math.floor(Math.random() * colors.length);
   const selectedColor = colors[random];
   counterValue.style.backgroundColor = selectedColor;
